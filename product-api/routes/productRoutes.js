@@ -8,13 +8,19 @@ const {
   getProductById,
   createProduct,
   updateProduct,
-  deleteProduct
+  deleteProduct,
+  searchProducts
 } = require('../controllers/productController');
 
 // @route   GET /api/products
-// @desc    Get all products
+// @desc    Get all products 
 // @access  Public
 router.get('/', getAllProducts);
+
+// @route   GET /api/products/search
+// @desc    Search products by name or description
+// @access  Public
+router.get('/search', searchProducts);
 
 // @route   GET /api/products/:id
 // @desc    Get product by ID
