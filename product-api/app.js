@@ -29,6 +29,7 @@ app.get('/', (req, res) => {
     version: '1.0.0',
     endpoints: {
       'GET /api/products': 'Get a list of all products',
+      'GET /api/products/search?q=term': 'Search products by name or description',
       'GET /api/products/:id': 'Get a single product by ID',
       'POST /api/products': 'Add a new product',
       'PUT /api/products/:id': 'Update an existing product',
