@@ -1,1 +1,3 @@
-# project_inv
+# Simple Product Inventory
+
+API (Node.js)
